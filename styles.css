@@ -1,0 +1,179 @@
+/* Style for all browsers */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0b0000;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #0b0000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive Design */
+/* For tablets */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+}
+
+/* For smartphones */
+@media only screen and (max-width: 480px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* For laptops */
+@media only screen and (min-width: 1024px) {
+    nav ul {
+        float: right;
+    }
+}
+
+
+/* Styles for unvisited links */
+nav ul li a:link {
+    color: #fff;
+}
+
+/* Styles for visited links */
+nav ul li a:visited {
+    color: #ccc;
+}
+
+/* Styles for hover effects */
+nav ul li a:hover {
+    color: rgb(241, 247, 248); /* Change to desired hover color */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Styles for mouse over */
+nav ul li a:hover {
+    background-color: #555; /* Change to desired background color */
+}
+
+/* Styles for active links */
+nav ul li a:active {
+    color: #f00; /* Change to desired color for active links */
+}
+
+
+/* Gallery Styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+/* CSS styles go here */
+
+/* Styles for movie cards */
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movie-card {
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.movie-card h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.movie-card p {
+    margin-top: 5px;
+}
+
+.movie-card button {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.movie-card button:hover {
+    background-color: #0056b3;
+}
